@@ -9,11 +9,23 @@ const fetchData = (flag) => {
 async function getData() {
   try {
     console.log("Start");
-    const result = await fetchData(false);
+    const result = await fetchData(true);
     console.log(result);
     console.log("End");
   } catch (err) {
     console.log(err);
   }
 }
+
+
+// fetchData()
+//   .then((data) => {
+//     console.log("Start");
+//     console.log(data);
+//     console.log("End");
+//   })
+//   .catch((err) => console.log(err));
+
+
+
 getData();
